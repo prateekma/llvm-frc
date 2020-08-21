@@ -1,3 +1,9 @@
-frc2020/
+frc2020/roborio/bin
+frc2020/roborio/include
+frc2020/roborio/lib
+frc2020/roborio/libexec
+frc2020/roborio/share
+
+
 .DS_Store
 build-libcxx/
