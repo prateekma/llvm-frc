@@ -7,6 +7,7 @@ sysroot=$compiler_root/$target
 libcxx_root=$basedir/libcxx
 
 clang++ \
+ -Wl, -lstdc++ \
  -std=c++2a \
  -fuse-ld=/usr/local/opt/llvm10/bin/ld.lld \
  -target $target \
