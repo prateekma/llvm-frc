@@ -15,7 +15,7 @@ CC=clang CXX=clang++ cmake \
     -DCMAKE_CROSSCOMPILING=True \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_LIBRARY_PATH="$sysroot/usr/lib/" \
-    -DCMAKE_CXX_FLAGS="-target $target -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=softfp --sysroot=$sysroot -gcc-toolchain $sysroot -B $compiler_root/bin -B $sysroot/usr/lib/$target/7.3.0" \
+    -DCMAKE_CXX_FLAGS="-std=c++2a -target $target -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=softfp --sysroot=$sysroot -gcc-toolchain $sysroot -B $compiler_root/bin -B $sysroot/usr/lib/$target/7.3.0" \
     -DCMAKE_EXE_LINKER_FLAGS="-L$sysroot/usr/lib/$target/7.3.0 -L/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib" \
     -DCMAKE_SHARED_LINKER_FLAGS="-L$sysroot/usr/lib/$target/7.3.0 -L/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib" \
     -DLLVM_PATH=../llvm-project/llvm \
