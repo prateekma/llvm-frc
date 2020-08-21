@@ -9,7 +9,7 @@ libcxx_root=$basedir/libcxx
 clang++ \
  -Wl, -lstdc++ \
  -std=c++2a \
- -fuse-ld=/usr/local/opt/llvm10/bin/ld.lld \
+ -fuse-ld=lld \
  -target $target \
  -mcpu=cortex-a9 \
  -mfpu=vfpv3 \
