@@ -26,3 +26,5 @@ CC=clang CXX=clang++ cmake \
     ../llvm-project/libcxx
 ninja && ninja install
 cp $sysroot/usr/include/c++/7.3.0/bits/cxxabi_init_exception.h $install_dir/include/c++/v1/bits/
+rm $install_dir/lib/libc++.so.1
+cp $install_dir/lib/libc++.so.1.0 $install_dir/lib/libc++.so.1
